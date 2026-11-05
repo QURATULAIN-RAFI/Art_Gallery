@@ -1,6 +1,4 @@
 
-/* ========== 1. GENERAL STYLES ========== */
-
 :root {
     --background: #faf7f2;
     --white: #ffffff;
@@ -51,8 +49,6 @@ section {
     scroll-margin-top: 90px;
 }
 
-
-/* ========== 2. NAVBAR ========== */
 
 .navbar {
     position: fixed;
@@ -134,8 +130,6 @@ section {
     width: 100%;
 }
 
-
-/* ========== 3. HERO SECTION ========== */
 
 .hero {
     position: relative;
@@ -237,7 +231,6 @@ section {
 }
 
 
-/* ========== 4. MAIN LAYOUT ========== */
 
 .main-layout {
     display: grid;
@@ -357,8 +350,6 @@ section {
 }
 
 
-/* ========== 5. ARTWORK CARDS ========== */
-
 .art-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -466,8 +457,6 @@ section {
 }
 
 
-/* ========== 6. GALLERY ========== */
-
 .gallery-section {
     padding-top: 10px;
 }
@@ -511,7 +500,6 @@ section {
 }
 
 
-/* ========== 7. ABOUT ME ========== */
 
 .about-section {
     display: grid;
@@ -553,7 +541,6 @@ section {
 }
 
 
-/* ========== 8. CREATIVE HIGHLIGHTS ========== */
 
 .highlights-section {
     padding: 70px 5%;
@@ -602,7 +589,6 @@ section {
 }
 
 
-/* ========== 9. CONTACT SECTION ========== */
 
 .contact-section {
     display: grid;
@@ -684,7 +670,6 @@ section {
 }
 
 
-/* ========== 10. FOOTER ========== */
 
 .footer {
     padding: 45px 7% 20px;
@@ -747,7 +732,6 @@ section {
 }
 
 
-/* ========== 11. TABLET: 768px AND ABOVE ========== */
 
 @media (min-width: 768px) {
 
@@ -830,7 +814,6 @@ section {
 }
 
 
-/* ========== 12. DESKTOP: 992px AND ABOVE ========== */
 
 @media (min-width: 992px) {
 
@@ -897,7 +880,6 @@ section {
 }
 
 
-/* ========== 14. SMALL MOBILE SCREENS ========== */
 
 @media (max-width: 380px) {
 
