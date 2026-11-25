@@ -50,6 +50,8 @@ section {
 }
 
 
+/* ========== NAVBAR ========== */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -130,6 +132,8 @@ section {
     width: 100%;
 }
 
+
+/* ========== HERO SECTION ========== */
 
 .hero {
     position: relative;
@@ -231,6 +235,7 @@ section {
 }
 
 
+/* ========== MAIN LAYOUT ========== */
 
 .main-layout {
     display: grid;
@@ -240,6 +245,9 @@ section {
     margin: 0 auto;
     padding: 55px 5%;
 }
+
+
+/* ========== SIDEBAR ========== */
 
 .sidebar {
     display: flex;
@@ -318,6 +326,9 @@ section {
     min-width: 0;
 }
 
+
+/* ========== SECTION HEADINGS ========== */
+
 .section {
     margin-bottom: 65px;
 }
@@ -349,6 +360,8 @@ section {
     font-size: 13px;
 }
 
+
+/* ========== ARTWORK CARDS ========== */
 
 .art-grid {
     display: grid;
@@ -389,10 +402,12 @@ section {
     transform: scale(1.07);
 }
 
+/* New Badge */
+
 .new-badge {
     position: absolute;
     top: 13px;
-    right: 13px;
+    left: 13px;
     padding: 4px 11px;
     border-radius: 4px;
     background-color: var(--accent);
@@ -457,6 +472,73 @@ section {
 }
 
 
+/* ========== FAVOURITE BUTTON ========== */
+
+.favorite-checkbox {
+    display: none;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    z-index: 5;
+
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background-color: var(--white);
+    color: var(--accent);
+
+    font-size: 19px;
+    cursor: pointer;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.favorite-btn .bi-heart-fill {
+    display: none;
+}
+
+.favorite-btn:hover {
+    transform: scale(1.12);
+    background-color: var(--beige);
+}
+
+/* Selected Favourite */
+
+.favorite-checkbox:checked + .favorite-btn {
+    color: #e63946;
+}
+
+.favorite-checkbox:checked + .favorite-btn .bi-heart {
+    display: none;
+}
+
+.favorite-checkbox:checked + .favorite-btn .bi-heart-fill {
+    display: inline;
+}
+
+.favorite-checkbox:checked + .favorite-btn:hover {
+    background-color: #ffe5e7;
+}
+
+/* Keyboard accessibility */
+
+.favorite-checkbox:focus-visible + .favorite-btn {
+    outline: 3px solid var(--accent);
+    outline-offset: 3px;
+}
+
+
+/* ========== GALLERY ========== */
+
 .gallery-section {
     padding-top: 10px;
 }
@@ -500,6 +582,7 @@ section {
 }
 
 
+/* ========== ABOUT SECTION ========== */
 
 .about-section {
     display: grid;
@@ -541,6 +624,7 @@ section {
 }
 
 
+/* ========== HIGHLIGHTS ========== */
 
 .highlights-section {
     padding: 70px 5%;
@@ -589,6 +673,7 @@ section {
 }
 
 
+/* ========== CONTACT SECTION ========== */
 
 .contact-section {
     display: grid;
@@ -670,6 +755,7 @@ section {
 }
 
 
+/* ========== FOOTER ========== */
 
 .footer {
     padding: 45px 7% 20px;
@@ -732,6 +818,49 @@ section {
 }
 
 
+/* ========== CLICKABLE ICON EFFECTS ========== */
+
+/* Icons inside links */
+
+a i {
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover i {
+    transform: scale(1.15);
+}
+
+/* Navbar icons */
+
+.nav-links a i {
+    margin-right: 3px;
+}
+
+/* Social media icons */
+
+.social-links a i {
+    font-size: 15px;
+    vertical-align: middle;
+}
+
+.social-links a:hover i {
+    color: var(--accent);
+}
+
+/* Footer icons */
+
+.footer-column a i {
+    margin-right: 5px;
+}
+
+.footer-column a:hover i {
+    color: #e6a58f;
+}
+
+
+/* ========== TABLET RESPONSIVE ========== */
 
 @media (min-width: 768px) {
 
@@ -814,6 +943,7 @@ section {
 }
 
 
+/* ========== DESKTOP RESPONSIVE ========== */
 
 @media (min-width: 992px) {
 
@@ -870,9 +1000,9 @@ section {
 }
 
 
-/* ========== 13. WIDE DESKTOP ========== */
+/* ========== WIDE DESKTOP ========== */
 
-@media (min-width: 1250px) {
+@media (min-width: 1025px) {
 
     .art-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -880,8 +1010,9 @@ section {
 }
 
 
+/* ========== SMALL MOBILE ========== */
 
-@media (max-width: 380px) {
+@media (max-width: 480px) {
 
     .nav-links {
         gap: 4px 10px;
